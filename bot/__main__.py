@@ -57,7 +57,7 @@ def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("★Owner", "https://t.me/AT0712")
     buttons.buildbutton("★Mirror Group", "https://t.me/botupquadrive")
-    buttons.buildbutton("★hannel", "https://t.me/botupquadrivechannel")
+    buttons.buildbutton("★Channel", "https://t.me/botupquadrivechannel")
     buttons.buildbutton("★Report Group", "https://t.me/AT0712")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
