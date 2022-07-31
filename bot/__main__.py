@@ -59,7 +59,7 @@ def start(update, context):
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-Welcome | ✤◄ 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭 ►✤ Bot is ✔️Ready
+Welcome | ✤◄ 𝘽𝙤𝙩 𝙪𝙥 𝙦𝙪𝙖 𝙙𝙧𝙞𝙫𝙚 ►✤ Bot is ✔️Ready
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         update.effective_message.reply_photo("https://telegra.ph/file/d2d65936765c436fa8835.jpg", parse_mode=ParseMode.MARKDOWN)
