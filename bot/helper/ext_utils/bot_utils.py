@@ -253,7 +253,7 @@ def get_readable_message():
                 break
         if len(msg) == 0:
             return None, None
-        bmsg += f"\n<b>✫   ●◄║ {TITLE_NAME} ║►● ✫</b>"
+        bmsg = f"\n<b>✫   ●◄║ {TITLE_NAME} ║►● ✫</b>"
         bmsg += f"\n<b>➦ Disk ●</b> {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)}"
         bmsg += f"<b> | ➦ UPTM ●</b> {get_readable_time(time() - botStartTime)}"
         dlspeed_bytes = 0
