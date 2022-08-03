@@ -253,9 +253,7 @@ def get_readable_message():
                 break
         if len(msg) == 0:
             return None, None
-        bmsg = f"\n<b>✫▬✫▬✫▬✫▬✫▬✫▬✫▬✫</b>"
         bmsg += f"\n<b>✫   ●◄║ {TITLE_NAME} ║►● ✫</b>"
-        bmsg += f"\n<b>✫▬✫▬✫▬✫▬✫▬✫▬✫▬✫</b>"
         bmsg += f"\n<b>➦ Disk ●</b> {get_readable_file_size(disk_usage(DOWNLOAD_DIR).free)}"
         bmsg += f"<b> | ➦ UPTM ●</b> {get_readable_time(time() - botStartTime)}"
         dlspeed_bytes = 0
@@ -436,7 +434,7 @@ def bot_sys_stats():
 ★Disk● {total} | ★Free● {free}
 ★Used● [{disk}%] ★is● {used}
 
-★Powered By ➥ 𝐁𝐲 - 𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭
+★Powered By ➥ 𝐁𝐲 - {TITLE_NAME}
 """
     return stats
 
