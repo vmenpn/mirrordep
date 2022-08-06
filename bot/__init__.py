@@ -547,15 +547,15 @@ except KeyError:
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Woodcraft-Repo'
+        TITLE_NAME = '🅑🅞🅣'
 except KeyError:
-    TITLE_NAME = 'Woodcraft-Repo'
+    TITLE_NAME = '🅑🅞🅣'
 try:
     IMAGE_URL = getConfig('IMAGE_URL')
     if len(IMAGE_URL) == 0:
-        IMAGE_URL = ('https://telegra.ph/file/cd07902ef9ebd158d7043.jpg')
+        IMAGE_URL = ('https://wikitienganh.com/wp-content/uploads/2021/11/you-are-welcome-la-gi.jpg')
 except KeyError:
-    IMAGE_URL = ('https://telegra.ph/file/cd07902ef9ebd158d7043.jpg')    
+    IMAGE_URL = ('https://wikitienganh.com/wp-content/uploads/2021/11/you-are-welcome-la-gi.jpg')    
 try:
     TOKEN_PICKLE_URL = getConfig('TOKEN_PICKLE_URL')
     if len(TOKEN_PICKLE_URL) == 0:
